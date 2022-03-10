@@ -44,6 +44,12 @@ SELECT COUNT(*) AS COUNT,State,City FROM AddressBook_Table GROUP BY State,City;
 --#UC8 Ability to Retrive Sorted Persons Records By City
 SELECT * FROM AddressBook_Table WHERE City = 'Kolhapur' ORDER BY FirstName;
 
+--#UC9 Identify each Address book with Name and Type 
+ALTER TABLE AddressBook_Table Add AddressBookName varchar(100), AddressBookType varchar(100);
 
+UPDATE AddressBook_Table SET AddressBookName='FreindsAddressBook',AddressBookType='Freinds' WHERE FirstName ='Sourabh' Or FirstName='Sanika';
+UPDATE AddressBook_Table SET AddressBookName='FamilyAddressBook',AddressBookType='Family' WHERE FirstName ='Snehal';
+UPDATE AddressBook_Table SET AddressBookName='ProfesionAddressBook',AddressBookType='Profession' WHERE FirstName ='Anil';
+SELECT * FROM AddressBook_Table;
 
 
