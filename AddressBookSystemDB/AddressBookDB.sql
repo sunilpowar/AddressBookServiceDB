@@ -41,7 +41,8 @@ SELECT * FROM AddressBook_Table WHERE City='Nipani' Or State='Karnataka';
 --#UC7 Ability To Get The Size Of AddressBook By City And State Using Count
 SELECT COUNT(*) AS COUNT,State,City FROM AddressBook_Table GROUP BY State,City;
 
-
+--#UC8 Ability to Retrive Sorted Persons Records By City
+SELECT * FROM AddressBook_Table WHERE City = 'Kolhapur' ORDER BY FirstName;
 
 
 
