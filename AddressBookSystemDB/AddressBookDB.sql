@@ -52,4 +52,7 @@ UPDATE AddressBook_Table SET AddressBookName='FamilyAddressBook',AddressBookType
 UPDATE AddressBook_Table SET AddressBookName='ProfesionAddressBook',AddressBookType='Profession' WHERE FirstName ='Anil';
 SELECT * FROM AddressBook_Table;
 
+--#UC10 Get number of contact persons Count by type
+SELECT COUNT(AddressBookType) AS TypeCount, AddressBookType FROM AddressBook_Table GROUP BY AddressBookType;
+
 
