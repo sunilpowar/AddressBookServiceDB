@@ -35,5 +35,8 @@ SELECT * FROM AddressBook_Table;
 DELETE FROM AddressBook_Table WHERE FirstName='Ajim' And LastName = 'Maner';
 SELECT * FROM AddressBook_Table;
 
+--#UC6 Retrieve Person Record From Table By City Or State from Address Book
+SELECT * FROM AddressBook_Table WHERE City='Nipani' Or State='Karnataka';
+
 
 
