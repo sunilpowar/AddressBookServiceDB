@@ -31,7 +31,9 @@ UPDATE AddressBook_Table SET Email='sourabhpowar@gmail.com' WHERE FirstName='Sou
 UPDATE AddressBook_Table SET PhoneNumber=9764513856 WHERE FirstName='Ajim';
 SELECT * FROM AddressBook_Table;
 
-
+--#UC5 Delete Existing Contact From Table using DELETE
+DELETE FROM AddressBook_Table WHERE FirstName='Ajim' And LastName = 'Maner';
+SELECT * FROM AddressBook_Table;
 
 
 
