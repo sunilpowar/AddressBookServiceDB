@@ -38,5 +38,11 @@ SELECT * FROM AddressBook_Table;
 --#UC6 Retrieve Person Record From Table By City Or State from Address Book
 SELECT * FROM AddressBook_Table WHERE City='Nipani' Or State='Karnataka';
 
+--#UC7 Ability To Get The Size Of AddressBook By City And State Using Count
+SELECT COUNT(*) AS COUNT,State,City FROM AddressBook_Table GROUP BY State,City;
+
+
+
+
 
 
