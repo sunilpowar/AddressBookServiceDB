@@ -26,6 +26,12 @@ INSERT INTO AddressBook_Table VALUES('Sourabh', 'Powar', 'Chikhali', 'Kolhapur',
 					    	('Anil', 'Matakar', 'Gadhinglaj', 'Kolhapur', 'Maharashtra', 416784, 9764513854, 'anil@gmail.com');
 SELECT * FROM AddressBook_Table;
 
+--#UC4 Edit Existing AddressBook Table Using UPDATE
+UPDATE AddressBook_Table SET Email='sourabhpowar@gmail.com' WHERE FirstName='Sourabh';
+UPDATE AddressBook_Table SET PhoneNumber=9764513856 WHERE FirstName='Ajim';
+SELECT * FROM AddressBook_Table;
+
+
 
 
 
