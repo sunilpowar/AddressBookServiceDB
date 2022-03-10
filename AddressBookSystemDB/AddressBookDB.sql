@@ -56,3 +56,7 @@ SELECT * FROM AddressBook_Table;
 SELECT COUNT(AddressBookType) AS TypeCount, AddressBookType FROM AddressBook_Table GROUP BY AddressBookType;
 
 
+--#UC11 Add to both Friend nad Family
+INSERT INTO AddressBook_Table VALUES ('Snehal', 'Awate', 'Mamadapur', 'Belgaum', 'Karnataka', 591238, 9764581346, 'snehal@gmail.com','FriendsAddressBook','Friends');
+SELECT * FROM AddressBook_Table;
+
